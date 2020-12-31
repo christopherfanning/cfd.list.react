@@ -17,3 +17,7 @@ html {
   display: block;
   margin: 40px;
 }
+
+.houseImg {
+  background-image: "./assets/img/houses/E1.jpg";
+}
