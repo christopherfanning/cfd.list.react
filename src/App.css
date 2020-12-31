@@ -19,5 +19,15 @@ html {
 }
 
 .houseImg {
-  background-image: "./assets/img/houses/E1.jpg";
+  background-color: black;
+  display: inline-block;
+}
+
+.houseImg img {
+  max-height: 200px;
+}
+
+.houseInfo {
+  display: inline-block;
+  margin: 1rem;
 }

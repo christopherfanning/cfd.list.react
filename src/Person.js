@@ -7,9 +7,12 @@ const person = (props) => {
       <div className="houseImg">
         <img src={[house[props.index].profilePic]} alt="" />
       </div>
-      <h3>I'm {house[props.index].name}</h3>
-      <p>{house[props.index].address}</p>
-      <p>{house[props.index].rigs}</p>
+
+      <div className="houseInfo">
+        <h3>{house[props.index].name}</h3>
+        <p>{house[props.index].address}</p>
+        <p>{house[props.index].rigs}</p>
+      </div>
     </div>
   );
 };
