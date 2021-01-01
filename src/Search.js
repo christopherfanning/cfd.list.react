@@ -5,8 +5,9 @@ export default class Search extends Component {
   search() {
     console.log("I got a click");
     let matches = [];
-    let searchStr = "19";
+    let searchStr = document.getElementById("searchString").value;
     const regexp = new RegExp(searchStr, "i");
+    console.log(searchStr);
 
     house.map((value, index) => {
       let searched = house[index].rigs.includes(searchStr);
@@ -14,7 +15,7 @@ export default class Search extends Component {
       if (searched === true) {
         matches.push(index);
       }
-      console.log(matches);
+      //   console.log(matches);
       return matches;
     });
 
@@ -24,7 +25,7 @@ export default class Search extends Component {
   render() {
     return (
       <div>
-        <input type="text" placeholder="Enter Rig Number" />
+        <input id="searchString" type="text" placeholder="Enter Rig Number" />
         <button id="search" onClick={this.search}>
           Search
         </button>
