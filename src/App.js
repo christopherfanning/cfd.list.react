@@ -17,6 +17,7 @@ function App() {
           </Person>
         );
       })}
+      {/* {(house = house.shift)} */}
     </div>
   );
 }
