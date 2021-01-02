@@ -1,7 +1,7 @@
 import React from "react";
 import house from "./Data";
 
-const person = (props) => {
+const House = (props) => {
   return (
     <div className="house">
       <div className="houseImg">
@@ -17,4 +17,4 @@ const person = (props) => {
   );
 };
 
-export default person;
+export default house;

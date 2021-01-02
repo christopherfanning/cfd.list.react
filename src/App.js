@@ -1,8 +1,9 @@
 import "./App.css";
-import Person from "./House";
+import House from "./House";
 import house from "./Data";
 import "./House";
 import Search from "./Search";
+import matches from "./Search";
 
 function App() {
   return (
@@ -10,14 +11,21 @@ function App() {
       <header className="App-header"></header>
       <Search></Search>
       <h1>Houses</h1>
-      {house.map((value, index) => {
+      {/* {house.map((value, index) => {
         return (
           <Person key={index} index={index}>
             {value}
           </Person>
         );
+      })} */}
+
+      {matches.map((value, index) => {
+        return (
+          <House key={index} index={index}>
+            {value}
+          </House>
+        );
       })}
-      {/* {(house = house.shift)} */}
     </div>
   );
 }
